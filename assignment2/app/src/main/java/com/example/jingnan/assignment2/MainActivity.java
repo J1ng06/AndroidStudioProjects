@@ -1,5 +1,7 @@
 package com.example.jingnan.assignment2;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -22,9 +24,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void enterNames(View view){
-        ExampleFragment fragment = new ExampleFragment();
-        fragmentTransaction.add(R.id.fragment_container, fragment);
-        fragmentTransaction.commit();
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

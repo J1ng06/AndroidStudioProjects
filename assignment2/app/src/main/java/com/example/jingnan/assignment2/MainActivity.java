@@ -23,8 +23,7 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    public void enterNames(View view){
-
+    public void enterNames(){
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

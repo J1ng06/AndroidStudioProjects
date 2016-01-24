@@ -7,4 +7,27 @@
     <string name="store">Store</string>
     <string name="load">Load</string>
     <string name="exit">Exit</string>
+    <string name="enterNamesTitle">Enter Name and Information</string>
+    <string name="Name">Enter Your Name</string>
+    <string name="age">Enter Your Age</string>
+    <string name="selectMovie">Select Your Favourite Movie:</string>
+    <string name="chooseAMovie">Choos a movie</string>
+    <string name="done">DONE</string>
+    <string name="add">ADD</string>
+    <string name="storeLabel">Store the information to file:</string>
+    <string name="fileName">Enter the Filename</string>
+    <string name="txt">.txt</string>
+
+
+    <string-array name="movies_array">
+        <item>Avengers: Age of Ultron</item>
+        <item>Furious 7</item>
+        <item>Inside Out</item>
+        <item>Jurassic World</item>
+        <item>Minions</item>
+        <item>Mission: Impossible – Rogue Nation</item>
+        <item>Star Wars: The Force Awakens</item>
+        <item>The Hunger Games: Mockingjay</item>
+        <item>The Martian</item>
+    </string-array>
 </resources>

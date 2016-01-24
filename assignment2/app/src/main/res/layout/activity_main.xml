@@ -9,56 +9,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jingnan.assignment2.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enterNames"
-        android:id="@+id/enterNames"
-        android:layout_marginTop="90dp"
-        android:textAllCaps="false"
-        android:elegantTextHeight="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="enterNames"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/view"
-        android:id="@+id/view"
-        android:textAllCaps="false"
-        android:elegantTextHeight="true"
-        android:layout_below="@+id/enterNames"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/store"
-        android:id="@+id/store"
-        android:textAllCaps="false"
-        android:layout_below="@+id/view"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/load"
-        android:id="@+id/load"
-        android:textAllCaps="false"
-        android:layout_below="@+id/store"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/exit"
-        android:id="@+id/exit"
-        android:textAllCaps="false"
-        android:layout_below="@+id/load"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frameLayoutFragmentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
 </RelativeLayout>

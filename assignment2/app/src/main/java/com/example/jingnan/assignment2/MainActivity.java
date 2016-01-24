@@ -1,19 +1,29 @@
 package com.example.jingnan.assignment2;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends ActionBarActivity {
+import java.util.ArrayList;
 
+public class MainActivity extends ActionBarActivity implements EnterNameFragment.DoneListener {
+    private ArrayList<String> name_list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MainFragment mainFragment = new MainFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayoutFragmentContainer, mainFragment);
+        fragmentTransaction.addToBackStack(null);
+
+        fragmentTransaction.commit();
     }
 
     @Override
@@ -23,8 +33,7 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    public void enterNames(){
-    }
+    public void btnAddClicked(){}
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -39,4 +48,14 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onClickDoneBtn(ArrayList arrayList) {
+        name_list = arrayList;
+    }
+
+    public ArrayList<String> getNameList(){
+        return name_list;
+    }
+
 }

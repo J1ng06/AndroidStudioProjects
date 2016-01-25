@@ -17,6 +17,8 @@
     <string name="storeLabel">Store the information to file:</string>
     <string name="fileName">Enter the Filename</string>
     <string name="txt">.txt</string>
+    <string name="selectFileHint">Please select a file to load from above</string>
+    <string name="viewActivityTitle">All Information</string>
 
 
     <string-array name="movies_array">

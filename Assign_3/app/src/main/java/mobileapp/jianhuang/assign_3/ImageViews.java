@@ -6,9 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-/**
- * Created by jianhuang on 16-01-30.
- */
+
 public class ImageViews extends android.support.v4.app.FragmentActivity{
 
     public void onCreate(Bundle savedInstanceState) {

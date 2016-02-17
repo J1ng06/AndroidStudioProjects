@@ -307,6 +307,8 @@ public class CameraActivity extends Activity implements PictureCallback,
         }
     }
 
+
+
     public Camera.Size getBestPreviewSize(int width, int height, Camera.Parameters parameters){
         Camera.Size bestSize = null;
         List<Camera.Size> sizeList = parameters.getSupportedPreviewSizes();
